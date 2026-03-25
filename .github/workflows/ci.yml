@@ -1,5 +1,6 @@
-name: .NET CI
+name: .NET CI - Multi-project
 
+# Déclenche le pipeline à chaque push ou pull request sur la branche main
 on:
   push:
     branches: [ main ]
@@ -8,21 +9,26 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # GitHub Actions va utiliser un serveur Linux
 
     steps:
-    - uses: actions/checkout@v3   # Récupère ton code depuis GitHub
+      # 1️⃣ Récupérer le code depuis GitHub
+      - uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0.x
+      # 2️⃣ Installer .NET 8 sur le serveur
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore EmployeeManagementAPI.sln
+      # 3️⃣ Restaurer les dépendances NuGet pour toute la solution
+      - name: Restore dependencies
+        run: dotnet restore EmployeeManagementAPI.sln
 
-    - name: Build
-      run: dotnet build EmployeeManagementAPI.sln --configuration Release --no-restore
+      # 4️⃣ Build de tous les projets de la solution
+      - name: Build
+        run: dotnet build EmployeeManagementAPI.sln --configuration Release --no-restore
 
-    - name: Run tests
-      run: dotnet test EmployeeManagementAPI.sln --no-build --verbosity normal
+      # 5️⃣ Exécuter tous les tests unitaires (EmployeeManagement.Tests)
+      - name: Run tests
+        run: dotnet test EmployeeManagement.Tests/EmployeeManagement.Tests.csproj --no-build --verbosity normal
