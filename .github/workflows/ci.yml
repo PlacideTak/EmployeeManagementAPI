@@ -31,4 +31,4 @@ jobs:
 
       # 5️⃣ Exécuter tous les tests unitaires (EmployeeManagement.Tests)
       - name: Run tests
-        run: dotnet test EmployeeManagement.Tests/EmployeeManagement.Tests.csproj --no-build --verbosity normal
+        run: dotnet test EmployeeManagement.Tests/EmployeeManagement.Tests.csproj --verbosity normal
