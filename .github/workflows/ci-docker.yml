@@ -30,7 +30,7 @@ jobs:
 
     # 5. Run tests (si tu en as)
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+       run: dotnet test EmployeeManagementAPI.sln --configuration Release --no-build --logger "trx"
 
     # 6. Docker build
     - name: Build Docker image
