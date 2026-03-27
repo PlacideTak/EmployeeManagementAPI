@@ -1,0 +1,14 @@
+2026-03-27 11:19:57.020 -04:00 [INF] User profile is available. Using 'C:\Users\Nestor\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-27 11:19:57.725 -04:00 [INF] Now listening on: https://localhost:7263
+2026-03-27 11:19:57.916 -04:00 [INF] Now listening on: http://localhost:5139
+2026-03-27 11:19:58.149 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-27 11:19:58.206 -04:00 [INF] Hosting environment: Development
+2026-03-27 11:19:58.208 -04:00 [INF] Content root path: C:\Users\Nestor\Source\Repos\EmployeeManagementAPI\WebApplication1
+2026-03-27 11:20:00.231 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2026-03-27 11:20:00.873 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 643.6814ms
+2026-03-27 11:20:00.938 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-27 11:20:00.951 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2026-03-27 11:20:00.999 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 61.1182ms
+2026-03-27 11:20:01.140 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 189.0299ms
+2026-03-27 11:20:01.324 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2026-03-27 11:20:01.362 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.0003ms

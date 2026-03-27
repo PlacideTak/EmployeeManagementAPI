@@ -1,0 +1,52 @@
+2026-03-26 11:41:17.526 -04:00 [INF] User profile is available. Using 'C:\Users\Nestor\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 11:41:17.833 -04:00 [INF] Now listening on: https://localhost:7263
+2026-03-26 11:41:17.837 -04:00 [INF] Now listening on: http://localhost:5139
+2026-03-26 11:41:18.120 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 11:41:18.122 -04:00 [INF] Hosting environment: Development
+2026-03-26 11:41:18.122 -04:00 [INF] Content root path: C:\Users\Nestor\Source\Repos\EmployeeManagementAPI\WebApplication1
+2026-03-26 11:41:21.041 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2026-03-26 11:41:21.514 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 475.016ms
+2026-03-26 11:41:21.554 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:41:21.554 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2026-03-26 11:41:21.568 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 16514 application/javascript; charset=utf-8 14.4202ms
+2026-03-26 11:41:21.705 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.484ms
+2026-03-26 11:41:22.000 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2026-03-26 11:41:22.043 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.5773ms
+2026-03-26 11:42:53.343 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2026-03-26 11:42:53.377 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 37.2256ms
+2026-03-26 11:42:53.400 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2026-03-26 11:42:53.400 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:42:53.440 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.7814ms
+2026-03-26 11:42:53.441 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 16514 application/javascript; charset=utf-8 40.2277ms
+2026-03-26 11:42:53.671 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2026-03-26 11:42:53.680 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.3488ms
+2026-03-26 11:43:08.162 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/heakth - null null
+2026-03-26 11:43:08.241 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/heakth - 404 0 null 79.086ms
+2026-03-26 11:43:08.246 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/heakth, Response status code: 404
+2026-03-26 11:43:18.031 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/health - null null
+2026-03-26 11:43:18.057 -04:00 [INF] Executing endpoint 'Health checks'
+2026-03-26 11:43:18.062 -04:00 [INF] Executed endpoint 'Health checks'
+2026-03-26 11:43:18.064 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/health - 200 null text/plain 33.1411ms
+2026-03-26 11:43:18.144 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/favicon.ico - null null
+2026-03-26 11:43:18.152 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/favicon.ico - 404 0 null 8.3897ms
+2026-03-26 11:43:18.156 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/favicon.ico, Response status code: 404
+2026-03-26 11:44:26.701 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2026-03-26 11:44:26.717 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 16.4737ms
+2026-03-26 11:44:26.745 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:44:26.764 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2026-03-26 11:44:26.775 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 16514 application/javascript; charset=utf-8 28.6077ms
+2026-03-26 11:44:26.787 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.2433ms
+2026-03-26 11:44:26.878 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2026-03-26 11:44:26.886 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.8131ms
+2026-03-26 11:46:10.748 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2026-03-26 11:46:10.779 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 31.7288ms
+2026-03-26 11:46:10.800 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:46:10.816 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2026-03-26 11:46:10.816 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 16514 application/javascript; charset=utf-8 15.9646ms
+2026-03-26 11:46:10.835 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.9267ms
+2026-03-26 11:46:10.953 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2026-03-26 11:46:10.966 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.2146ms
+2026-03-26 11:47:58.671 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7263/health - null null
+2026-03-26 11:47:58.683 -04:00 [INF] Executing endpoint 'Health checks'
+2026-03-26 11:47:58.686 -04:00 [INF] Executed endpoint 'Health checks'
+2026-03-26 11:47:58.687 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7263/health - 200 null text/plain 15.8897ms
