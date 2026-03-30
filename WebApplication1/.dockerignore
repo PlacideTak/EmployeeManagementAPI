@@ -1,0 +1,23 @@
+# Dossiers de compilation locaux (inutiles dans l'image)
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Git
+.git/
+.gitignore
+
+# Docker lui-même
+Dockerfile
+.dockerignore
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers de config locaux sensibles
+appsettings.Development.json
