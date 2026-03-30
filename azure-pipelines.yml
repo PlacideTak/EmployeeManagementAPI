@@ -1,0 +1,56 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  dockerHubUsername: 'placidetak'
+  imageName: 'placidetak/monapi'
+  imageTag: '$(Build.BuildId)'
+  containerAppName: 'employee-api-rg'
+  resourceGroup: 'employee-api-rg'
+
+stages:
+
+  - stage: CI
+    displayName: 'Build et Push image Docker'
+    jobs:
+      - job: Build
+        steps:
+
+          - task: Docker@2
+            displayName: 'Login Docker Hub'
+            inputs:
+              command: 'login'
+              containerRegistry: 'DockerHubConnection'
+
+          - task: Docker@2
+            displayName: 'Build et Push'
+            inputs:
+              command: 'buildAndPush'
+              Dockerfile: 'Dockerfile'
+              containerRegistry: 'DockerHubConnection'
+              repository: '$(dockerHubUsername)/$(imageName)'
+              tags: |
+                $(imageTag)
+                latest
+
+  - stage: CD
+    displayName: 'Déploiement Azure Container App'
+    dependsOn: CI
+    jobs:
+      - job: Deploy
+        steps:
+
+          - task: AzureCLI@2
+            displayName: 'Mettre à jour le Container App'
+            inputs:
+              azureSubscription: 'AzureConnection'
+              scriptType: 'bash'
+              scriptLocation: 'inlineScript'
+              inlineScript: |
+                az containerapp update \
+                  --name $(containerAppName) \
+                  --resource-group $(resourceGroup) \
+                  --image $(dockerHubUsername)/$(imageName):$(imageTag)
